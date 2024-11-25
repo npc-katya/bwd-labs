@@ -174,3 +174,31 @@ tr, td {
   transform: translate(-50%, -50%) scale(1);
 }
   
+
+.history-container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+  padding-top: 46px;
+  
+}
+
+.restore-button {
+  background-color: #e9c38c;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 150px;
+  height: 20px;
+}
+
+.history-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-item {
+  padding: 5px;
+  padding-left: 0px;
+  border-radius: 5px;
+  color: #787061;
+}
