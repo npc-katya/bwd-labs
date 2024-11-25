@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>список задач</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="icon" href="/img/logo1.png">
+</head>
+
+<body>
+
+
+    <!-- шапка -->
+    <div class="header">
+        <div class="header-nav">
+            <div class="logo">
+                <img src="/img/logo1.png" alt="logo">
+                <a href="#!">дела</a>
+            </div>
+
+            <nav id="nav" class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">главная</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">проекты</a></li>
+                    <li class="nav-item"><a href="#!" class="nav-link active">список задач</a></li>
+                    <li class="nav-item"><a href="info.html" class="nav-link">о приложении</a></li>
+                </ul>
+                <button id="nav-btn" class="nav-button">
+                    <img id="nav-btn-img" src="/img/nav-open.svg" alt="Nav button">
+                </button>
+            </nav>
+        </div>
+    </div>
+
+        
+    <!-- содержание -->
+    <div class="container">
+        <div class="header-button">
+            <h1 class="h1-custom">список задач</h1>
+            <button class="custom-button" id="openBtn">добавить</button>
+        </div>
+
+
+        <!-- модальное окно -->
+        <dialog id="modal" class="modal">
+            <form>
+                <div class="modal-header">
+                    <p>добавление задачи</p>
+                    <button class="close-button" id="closeBtn">
+                        <img src="/img/nav-close.svg" alt="X">
+                    </button>
+                </div>
+                <div class="modal-content">
+                    <input id="inp" type="text" required placeholder="введите задачу..." class="input-text">
+                    <button type="submit" class="custom-button2">добавить</button>
+                </div>
+            </form>
+        </dialog>
+
+
+
+        <!--таблица с задачами -->
+        <div class="header-row">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>задачи</th>
+                        <th>в работе</th>
+                        <th>выполнено</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" class="real-checkbox">
+                                <span class="custom-checkbox"></span>
+                                дело 1
+                            </label>
+                            <button class="delete-button">X</button>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" class="real-checkbox">
+                                <span class="custom-checkbox"></span>
+                                дело 3
+                            </label>
+                            <button class="delete-button">X</button>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" class="real-checkbox">
+                                <span class="custom-checkbox"></span>
+                                дело 5
+                            </label>
+                            <button class="delete-button">X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" class="real-checkbox">
+                                <span class="custom-checkbox"></span>
+                                дело 2
+                            </label>
+                            <button class="delete-button">X</button>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" class="real-checkbox">
+                                <span class="custom-checkbox"></span>
+                                дело 4
+                            </label>
+                            <button class="delete-button">X</button>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" class="real-checkbox">
+                                <span class="custom-checkbox"></span>
+                                дело 5
+                            </label>
+                            <button class="delete-button">X</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+</body>
+
+<script src="/js/main.js"></script>
+<script src="bundle.js"></script>
+
+</html>
